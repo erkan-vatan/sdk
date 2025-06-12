@@ -83,7 +83,7 @@ jobs:
         uses: ./.github/actions/docker-clean-image
         with:
           docker_image: yocto-builder-${{ github.event.number }}
-        if: always()
+        if: always() 
 
       - name: Cleanup dangling docker images
         uses: ./.github/actions/docker-clean-dangling
